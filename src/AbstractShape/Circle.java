@@ -1,10 +1,10 @@
-package ShapeAndCircleAndRecAndSq;
+package AbstractShape;
 
 /**
  * Created by RENT on 2017-08-22.
  */
 public class Circle extends Shape {
-    private double _radius = 1.0;
+    protected double _radius = 1.0;
 
     public Circle() {}
     public Circle(double radius){
@@ -23,6 +23,12 @@ public class Circle extends Shape {
     public double getArea() {
         return Math.PI * Math.pow(_radius, 2d);
     }
+
+    @Override
+    public double getPerimeter() {
+        return 2 * Math.PI * _radius;
+    }
+
     public String toString(){
         StringBuilder sb = new StringBuilder();
         sb.append("A Circle with radius=")
