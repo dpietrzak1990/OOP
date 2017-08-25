@@ -46,9 +46,8 @@ public class Days {
             }
         };
 
-        private final String dzienTygodnia;
-
         public abstract DayOfTheWeek next();
+        private final String dzienTygodnia;
 
 
         DayOfTheWeek(String dzienTygodnia) {
@@ -64,5 +63,4 @@ public class Days {
             System.out.printf("%s %s\n", day.getDzienTygodnia(), day.next().getDzienTygodnia());
         }
     }
-
 }
