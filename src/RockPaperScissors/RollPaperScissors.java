@@ -12,11 +12,16 @@ public class RollPaperScissors {
     public enum gameStats {WYGRANA, PRZEGRANA, REMIS}
 
     public static void main(String[] args) {
-
-        decisionEnum playerDecision;
-        decisionEnum compDecision;
         Scanner sc = new Scanner(System.in);
+
+        decisionEnum playerDecision = decisionEnum.PAPER;
+        decisionEnum compDecision = decisionEnum.PAPER;
         String userDecision = sc.nextLine();
+
+        int remisy = 0;
+        int zwyciestwa = 0;
+        int porazki = 0;
+        int liczbaGier = 0;
 
         if (userDecision.equals("n")) {
             playerDecision = decisionEnum.SCISSORS;
@@ -40,10 +45,15 @@ public class RollPaperScissors {
             compDecision = decisionEnum.ROLL;
         }
 
+//        gameStats result = (compDecision,);
+//
+//        if(result.equals(gameStats.REMIS))
+//            remisy++;
+//        else if(result.equals(gameStats.WYGRANA))
+//            zwyciestwa++;
+//        else
+//            porazki++;
+//
+//        liczbaGier++;
     }
-//    public boolean amIWin(decisionEnum playerEnum, decisionEnum compEnum){
-//        if(playerEnum.equals(decisionEnum.ROLL) && compEnum.equals(decisionEnum.ROLL))
-//            return gameStats.REMIS
-//    }
-
 }

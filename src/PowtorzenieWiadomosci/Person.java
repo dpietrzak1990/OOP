@@ -9,4 +9,8 @@ public class Person {
     private String _pesel;
     private char _gender;
 
+    public Person(String name, String surname, String PESEL){
+        _name = name;
+        _surname = surname;
+    }
 }

@@ -19,4 +19,9 @@ public class OperatorAdam implements IOperator {
     public void notifyObservers() {
 
     }
+
+    @Override
+    public String getStatus() {
+        return null;
+    }
 }

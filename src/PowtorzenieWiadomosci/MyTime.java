@@ -87,4 +87,33 @@ public class MyTime {
         _hour = (_hour +1) %24;
         return this;
     }
+    public MyTime previousSecond(){
+        if(_second != 0){
+            _second = _second - 1;
+        }
+        else{
+            _second = 59;
+            previousMinute();
+        }
+        return this;
+    }
+    public MyTime previousMinute(){
+        if(_minute != 0){
+            _minute = _minute - 1;
+        }
+        else{
+            _minute = 59;
+            previousHour();
+        }
+        return this;
+    }
+    public MyTime previousHour(){
+        if(_hour != 0){
+            _hour = _hour - 1;
+        }
+        else {
+            _hour = 23;
+        }
+        return this;
+    }
 }
