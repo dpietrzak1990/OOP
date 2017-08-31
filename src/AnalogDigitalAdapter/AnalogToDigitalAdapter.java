@@ -1,0 +1,7 @@
+package AnalogDigitalAdapter;
+
+/**
+ * Created by RENT on 2017-08-31.
+ */
+public class AnalogToDigitalAdapter {
+}
