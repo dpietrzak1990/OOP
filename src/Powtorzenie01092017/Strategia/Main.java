@@ -7,9 +7,16 @@ public class Main {
     public static void main(String[] args) {
 
         Parzyste par = new Parzyste();
-        par.Uruchom();
-        System.out.println("-----------");
         Nieparzyste npar = new Nieparzyste();
-        npar.Uruchom();
+        StrategiaKoniaBonifacego skb = new StrategiaKoniaBonifacego(par);
+
+        for (int i :skb.uruchomAlgorytm()) {
+            System.out.println(i);
+        }
+        System.out.println("-------------");
+        skb.setBetaAlgorytm(npar);
+        for (int i :skb.uruchomAlgorytm()) {
+            System.out.println(i);
+        }
     }
 }
