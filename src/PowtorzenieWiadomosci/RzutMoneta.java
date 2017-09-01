@@ -57,9 +57,7 @@ public class RzutMoneta {
                 porazki++;
                 liczbaGier++;
             }
-
         }
-
         System.out.printf("Zagrałeś %d gier. Wygrałeś: %d razy (%f). Przegrałeś: %d (%f)",
                 liczbaGier, zwyciestwa, (double)zwyciestwa/liczbaGier*100, porazki, (double)porazki/liczbaGier*100);
 

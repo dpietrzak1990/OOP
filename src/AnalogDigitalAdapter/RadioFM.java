@@ -7,16 +7,19 @@ import java.util.Random;
  */
 public class RadioFM implements IAnalogSignal {
 
-    private double[] _tablica;
+    private double[] _analogSignal;
     Random rand = new Random();
+
+
 
     @Override
     public double[] getAnalog() {
-        return new double[0];
+        return _analogSignal;
     }
 
     @Override
-    public void setAnalog(double[] analogData) {
+    public void setAnalog(double[] _analogData) {
+        _analogSignal = _analogData;
 
     }
 
