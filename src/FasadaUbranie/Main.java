@@ -11,14 +11,22 @@ public class Main {
         Shorty shr = new Shorty();
         Tshirt tsh = new Tshirt();
         CzapkaZDaszkiem czap = new CzapkaZDaszkiem();
+        Bielizna biel = new Bielizna();
+        Dres dres = new Dres();
+        Trampki tramp = new Trampki();
 
         FasadaLetniegoUbioru flu = new FasadaLetniegoUbioru(boks, shr, tsh, skar, san, czap );
-        StrategiaUbioru su = new StrategiaUbioru(flu);
+        FasadaWiosennegoUbioru fwu = new FasadaWiosennegoUbioru(biel, dres, tramp);
 
-                su.ubieramySie();
+        StrategiaUbioru su = new StrategiaUbioru(flu);
+        su.ubieramySie();
         System.out.println("------");
         su.rozbieramySie();
-//        su.setPoraRoku();    //zmieniamy pore roku !
+        System.out.println("-------");
+        su.setPoraRoku(fwu);
+        su.ubieramySie();
+        System.out.println("--------");
+        su.rozbieramySie();
     }
 }
 

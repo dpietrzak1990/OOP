@@ -14,8 +14,6 @@ public class FasadaLetniegoUbioru implements IUbranieNaPoreRoku {
     private CzapkaZDaszkiem _czapka;
 
 
-
-
     public FasadaLetniegoUbioru(Bokserki boks, Shorty shr, Tshirt tsh, Skarpetki skar, Sandaly san, CzapkaZDaszkiem czap){
         _bokserki = boks;
         _shorty = shr;
