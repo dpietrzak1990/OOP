@@ -3,7 +3,7 @@ package AbstractShape;
 /**
  * Created by RENT on 2017-08-22.
  */
-//public class Main {
+//public class Lists {
 //    public static void main(String[] args) {
 //        Shape shape = new Shape("yellow", true);
 //        System.out.println(shape);
